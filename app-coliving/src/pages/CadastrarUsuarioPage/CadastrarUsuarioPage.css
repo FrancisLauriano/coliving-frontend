@@ -1,0 +1,24 @@
+/* pages/CadastrarUsuarioPage/CadastrarUsuarioPage.css */
+.cadastrar-usuario-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Altura mínima */
+    background-color: #ffffff;
+  }
+  
+  .content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 80px; /* Compensa a altura do Navbar */
+    margin-bottom: 120px; /* Compensa a altura do Footer */
+    box-sizing: border-box;
+  }
+  
+  
+  
+  
+  
+  

@@ -1,0 +1,135 @@
+/* components/Cards/UserCard.css */
+.user-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  margin-bottom: 20px;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+/* Layout para a esquerda */
+.user-card-left {
+  display: flex;
+  align-items: center;
+}
+
+.user-card-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.user-card-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-card-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ff4081;
+}
+
+.user-card-contact,
+.user-card-role {
+  font-size: 14px;
+  color: #4f4f4f;
+}
+
+/* Layout para a direita */
+.user-card-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px; /* Espaçamento entre a data e os botões */
+}
+
+/* Ajuste da data */
+.user-card-date {
+  font-size: 14px;
+  color: #4f4f4f;
+  margin-right: auto; /* Empurra os botões para a direita */
+  text-align: left;
+  padding-right: 150px; /* Adiciona um espaço extra à direita da data */
+}
+
+
+
+.user-card-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.user-card-action-icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+/* Responsividade para tablets e telas médias */
+@media (max-width: 768px) {
+  .user-card {
+    flex-direction: column; /* Empilhar elementos verticalmente */
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .user-card-left {
+    margin-bottom: 10px; /* Espaçamento entre o avatar e as ações */
+  }
+
+  .user-card-avatar {
+    width: 40px; /* Reduzir o tamanho do avatar */
+    height: 40px;
+  }
+
+  .user-card-name {
+    font-size: 14px; /* Reduzir o tamanho do texto */
+  }
+
+  .user-card-contact,
+  .user-card-role {
+    font-size: 12px; /* Reduzir o tamanho do texto */
+  }
+
+  .user-card-date {
+    font-size: 12px; /* Reduzir o tamanho do texto da data */
+    margin-right: 0;
+  }
+}
+
+/* Responsividade para smartphones e telas pequenas */
+@media (max-width: 480px) {
+  .user-card {
+    padding: 15px; /* Reduzir padding */
+  }
+
+  .user-card-avatar {
+    width: 36px; /* Reduzir ainda mais o tamanho do avatar */
+    height: 36px;
+  }
+
+  .user-card-name {
+    font-size: 12px; /* Reduzir o tamanho do texto */
+  }
+
+  .user-card-contact,
+  .user-card-role,
+  .user-card-date {
+    font-size: 10px; /* Reduzir o tamanho do texto */
+  }
+
+  .user-card-actions {
+    gap: 5px; /* Reduzir espaçamento entre os ícones */
+  }
+
+  .user-card-action-icon {
+    width: 18px; /* Reduzir tamanho dos ícones */
+    height: 18px;
+  }
+}

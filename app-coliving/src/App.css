@@ -1,0 +1,23 @@
+/* App.css */
+/* Importação da fonte Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif; 
+  background-color: #fff;
+  color: #333;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+  padding: 100px 20px; /* Espaço para evitar sobreposição do Navbar */
+  margin-top: 80px; /* Ajustar conforme a altura do Navbar */
+  text-align: center;
+}

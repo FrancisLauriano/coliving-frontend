@@ -1,0 +1,27 @@
+/* components/Lists/UserList.css */
+.user-list {
+  padding: 20px;
+  background-color: #f8f9fa;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Layout responsivo baseado em grid */
+  gap: 20px; /* Espaçamento entre os cards */
+  box-sizing: border-box; /* Garantir que padding não ultrapasse os limites */
+}
+
+/* Responsividade para tablets e telas médias */
+@media (max-width: 768px) {
+  .user-list {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Reduzir a largura mínima dos cards */
+    padding: 15px; /* Reduzir o padding geral */
+    gap: 15px; /* Reduzir o espaçamento entre os cards */
+  }
+}
+
+/* Responsividade para smartphones e telas pequenas */
+@media (max-width: 480px) {
+  .user-list {
+    grid-template-columns: 1fr; /* Cards ocupam toda a largura */
+    padding: 10px; /* Reduzir ainda mais o padding */
+    gap: 10px; /* Espaçamento menor entre os cards */
+  }
+}

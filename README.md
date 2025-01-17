@@ -1,1 +1,0 @@
-# coliving-frontend

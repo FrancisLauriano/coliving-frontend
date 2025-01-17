@@ -1,0 +1,88 @@
+/* components/Footer/Footer.css */
+
+/* Estilo base do footer */
+.footer {
+  background-color: #ff4081; /* Cor rosa */
+  color: white; /* Texto branco */
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 100px; /* Altura fixa */
+  z-index: 1000; /* Garante que o Footer está acima de outros conteúdos */
+}
+
+
+/* Área da esquerda do footer */
+.footer-left {
+  flex: 1; /* Ocupa o espaço restante disponível */
+  display: flex; /* Define como um flex container */
+  flex-direction: column; /* Garante alinhamento vertical dos itens */
+  justify-content: center; /* Centraliza o texto verticalmente */
+  align-items: flex-start; /* Alinha os itens à esquerda horizontalmente */
+  text-align: left; /* Alinha o texto dos elementos à esquerda */
+  font-size: 16px;
+  line-height: 1.2; /* Espaçamento entre linhas */
+  max-width: 30%; /* Limitar largura máxima */
+  word-wrap: break-word; /* Permitir quebra de palavras longas */
+  height: 100%; /* Certifique-se de que o container ocupa a altura desejada */
+}
+
+
+/* Área da direita do footer */
+.footer-right {
+  display: flex;
+  flex-direction: column; /* Itens empilhados verticalmente */
+  align-items: flex-end; /* Alinhar itens à direita horizontalmente */
+  justify-content: center; /* Centralizar verticalmente no container */
+  gap: 10px; /* Espaçamento entre itens */
+  max-width: 30%; /* Limitar largura máxima */
+  height: 100%; /* Certifique-se de que o container ocupa a altura total desejada */
+}
+
+/* Estilo para os textos da direita */
+.footer-right p {
+  margin: 0;
+  font-size: 16px; /* Tamanho do texto */
+  text-align: right; /* Alinhar o texto à direita */
+}
+
+
+/* Responsividade para tablets e dispositivos menores */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column; /* Empilhar conteúdo verticalmente */
+    align-items: center;
+    text-align: center; /* Centralizar texto */
+    padding: 20px 20px; /* Ajustar espaçamento */
+  }
+
+  .footer-left,
+  .footer-right {
+    max-width: 90%; /* Expandir largura em telas menores */
+    text-align: center; /* Centralizar texto */
+    margin-bottom: 10px; /* Espaçamento entre seções */
+  }
+
+  .footer-right {
+    align-items: center; /* Centralizar itens */
+  }
+}
+
+/* Responsividade para dispositivos muito pequenos (smartphones) */
+@media (max-width: 480px) {
+  .footer {
+    padding: 15px; /* Reduzir espaçamento para telas menores */
+  }
+
+  .footer-left,
+  .footer-right {
+    font-size: 14px; /* Reduzir tamanho do texto */
+  }
+}

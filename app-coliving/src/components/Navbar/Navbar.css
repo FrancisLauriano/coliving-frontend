@@ -1,0 +1,119 @@
+/* components/Navbar/Navbar.css */
+
+/* Estilo base do Navbar */
+.navbar {
+  background-color: #ff4081; /* Cor rosa */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 20px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Garante que está acima do conteúdo */
+  height: 70px; /* Define uma altura fixa */
+  box-sizing: border-box; /* Inclui padding no tamanho total */
+}
+
+
+/* Container do conteúdo do Navbar */
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px; /* Limitar largura máxima */
+  width: 100%;
+  position: relative; /* Necessário para centralizar o título */
+  padding: 0 10px;
+}
+
+/* Barra de busca */
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 3px 8px; /* Reduzido para diminuir a altura total */
+  border-radius: 4px;
+  width: 200px; /* Largura inicial da barra de busca */
+}
+
+/* Ícone de busca */
+.search-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+/* Input da barra de busca */
+.search-bar {
+  border: none;
+  outline: none;
+  font-size: 14px; /* Tamanho da fonte reduzido */
+  width: 100%; /* Expandir para preencher o contêiner */
+  padding: 3px 0; /* Reduzir padding interno do input */
+  height: auto; /* Garantir que a altura seja ajustada ao conteúdo */
+}
+
+/* Título do Navbar */
+.navbar-title {
+  font-size: 24px;
+  color: white;
+  position: absolute; /* Centralizar horizontalmente */
+  left: 50%;
+  transform: translateX(-50%); /* Ajustar centralização */
+  margin: 0;
+}
+
+/* Ícone do perfil */
+.navbar-profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile-icon {
+  width: 52px;
+  height: 52px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .search-container {
+    width: 150px; /* Reduzir largura da barra de busca */
+    padding: 4px 8px;
+  }
+
+  .navbar-title {
+    font-size: 20px; /* Reduzir tamanho da fonte do título */
+  }
+
+  .profile-icon {
+    width: 28px; /* Reduzir tamanho do ícone de perfil */
+    height: 28px;
+  }
+}
+
+/* Responsividade para telas muito pequenas (ex.: smartphones) */
+@media (max-width: 480px) {
+  .navbar-content {
+    flex-direction: column; /* Empilhar os elementos verticalmente */
+    align-items: center;
+    gap: 10px; /* Espaçamento entre os itens */
+  }
+
+  .search-container {
+    width: 100%; /* Ocupa a largura total do contêiner */
+  }
+
+  .navbar-title {
+    position: static; /* Alinhar ao fluxo normal */
+    transform: none; /* Remover transformação */
+    font-size: 18px; /* Reduzir tamanho do título */
+    text-align: center;
+  }
+
+  .profile-icon {
+    width: 24px; /* Reduzir tamanho do ícone de perfil */
+    height: 24px;
+  }
+}

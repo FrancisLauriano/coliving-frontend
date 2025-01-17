@@ -1,0 +1,109 @@
+/* DeleteModal.css */
+/* Fundo do modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo com transparência */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Contêiner do modal */
+.modal-container.delete-modal {
+  background-color: white; /* Cor branca para o DeleteModal */
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  width: 400px; /* Largura padrão */
+  max-width: 90%; /* Garantir que o modal não ultrapasse 90% da largura */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease; /* Suavizar as mudanças de tamanho */
+}
+
+/* Ícone do modal */
+.modal-icon {
+  margin-bottom: 20px;
+}
+
+.modal-icon img {
+  width: 48px; /* Tamanho padrão do ícone */
+  height: 48px;
+}
+
+/* Mensagem principal */
+.modal-title {
+  font-size: 18px; /* Tamanho padrão do texto */
+  color: #ff4081; /* Rosa */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Nome do usuário */
+.modal-username {
+  font-size: 16px; /* Tamanho padrão do texto */
+  color: #4f4f4f; /* Cinza escuro */
+  margin-bottom: 20px;
+}
+
+/* Ações do modal */
+.modal-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espaçamento entre botões */
+}
+
+/* Responsividade para tablets e dispositivos menores */
+@media (max-width: 768px) {
+  .modal-container.delete-modal {
+    padding: 20px; /* Reduzir padding */
+    width: 300px; /* Ajustar largura */
+  }
+
+  .modal-icon img {
+    width: 40px; /* Reduzir tamanho do ícone */
+    height: 40px;
+  }
+
+  .modal-title {
+    font-size: 16px; /* Reduzir tamanho do texto */
+  }
+
+  .modal-username {
+    font-size: 14px; /* Reduzir tamanho do texto do nome do usuário */
+  }
+
+  .modal-actions {
+    gap: 15px; /* Reduzir espaço entre botões */
+  }
+}
+
+/* Responsividade para smartphones */
+@media (max-width: 480px) {
+  .modal-container.delete-modal {
+    padding: 15px; /* Reduzir padding ainda mais */
+    width: 90%; /* Expandir para quase toda a largura da tela */
+  }
+
+  .modal-icon img {
+    width: 36px; /* Ícone menor */
+    height: 36px;
+  }
+
+  .modal-title {
+    font-size: 14px; /* Texto menor */
+  }
+
+  .modal-username {
+    font-size: 12px; /* Texto menor para o nome do usuário */
+  }
+
+  .modal-actions {
+    flex-direction: column; /* Empilhar botões verticalmente */
+    gap: 10px; /* Ajustar espaço entre botões */
+  }
+}

@@ -1,0 +1,111 @@
+/* components/Forms/Forms.css */
+
+/* Estilo do contêiner principal */
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 20px;
+  background-color: #F6F6F6; /* Cinza claro */
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+/* Formulário */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+}
+
+/* Labels */
+label {
+  font-size: 16px;
+  color: #4f4f4f; /* Cinza escuro */
+}
+
+/* Inputs e Select */
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+input::placeholder,
+select::placeholder {
+  color: #999999;
+  font-style: italic;
+}
+
+/* Botões */
+.form-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.btn-primary {
+  padding: 12px;
+  background-color: #ff4081; /* Rosa vibrante */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-primary:hover {
+  background-color: #e0356e;
+}
+
+.btn-secondary {
+  padding: 12px;
+  background-color: white; /* Fundo branco */
+  color: #D60808; /* Texto vermelho */
+  border: 2px solid #D60808; /* Borda vermelha */
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-secondary:hover {
+  background-color: #D60808; /* Fundo ligeiramente rosado ao passar o mouse */
+  color: white; /* Texto com vermelho mais forte */
+  border-color: #D60808; /* Borda com vermelho mais forte */
+}
+
+
+/* Responsividade */
+@media (max-width: 576px) {
+  .form-wrapper {
+    padding: 15px;
+    width: 90%;
+  }
+
+  input,
+  select {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,121 @@
+/* components/Botoes/Button.css*/
+
+/* Estilo básico do botão */
+.button {
+  border-radius: 10px;
+  padding: 10px 30px; /* Espaçamento interno padrão */
+  font-size: 16px; /* Tamanho da fonte padrão */
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+/* Botão OK (borda cinza escuro, fundo branco) */
+.button.ok {
+  background-color: white;
+  color: #4f4f4f;
+  border: 2px solid white;
+}
+
+.button.ok:hover {
+  background-color: #4f4f4f;
+  border-color: #4f4f4f;
+  color: white;
+}
+
+/* Botão Cancelar (borda vermelha, fundo branco) */
+.button.cancelar1 {
+  background-color: white;
+  color: red;
+  border: 2px solid red;
+}
+
+.button.cancelar1:hover {
+  background-color: red;
+  color: white;
+}
+
+/* Botão Remover (fundo rosa, texto branco) */
+.button.remover {
+  background-color: #ff4081;
+  color: white;
+  border: none;
+}
+
+.button.remover:hover {
+  background-color: #e0356e;
+}
+
+/* Botão Cancelar com outra classe */
+.button.cancelar2 {
+  background-color: white;
+  color: red;
+  border: 2px solid red;
+}
+
+.button.cancelar2:hover {
+  background-color: red;
+  color: white;
+}
+
+/* Botão Salvar */
+.button.salvar {
+  background-color: #ff4081; /* Rosa */
+  color: white;
+  border: none;
+}
+
+.button.salvar:hover {
+  background-color: #e0356e; /* Rosa escuro no hover */
+}
+
+/* Botão Cadastrar */
+.button.cadastrar {
+  background-color: #ff4081; /* Rosa */
+  color: white;
+  border: none;
+}
+
+.button.cadastrar:hover {
+  background-color: #e0356e; /* Rosa escuro no hover */
+}
+
+/* Efeito de clique */
+.button:active {
+  transform: scale(0.95);
+}
+
+/* Remover outline ao focar */
+.button:focus {
+  outline: none;
+}
+
+/* Responsividade */
+
+/* Telas menores que 768px (tablets) */
+@media (max-width: 768px) {
+  .button {
+    font-size: 14px; /* Reduzir tamanho da fonte */
+    padding: 8px 20px; /* Reduzir espaçamento interno */
+  }
+}
+
+/* Telas menores que 480px (smartphones) */
+@media (max-width: 480px) {
+  .button {
+    font-size: 12px; /* Tamanho da fonte ainda menor */
+    padding: 6px 15px; /* Menor espaçamento interno */
+  }
+
+  .button.ok,
+  .button.cancelar1,
+  .button.remover,
+  .button.cancelar2,
+  .button.salvar,
+  .button.cadastrar {
+    width: 100%; /* Botões ocupam 100% da largura */
+  }
+}
+
+  

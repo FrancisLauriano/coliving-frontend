@@ -1,0 +1,19 @@
+/* index.css */
+/* Importação da fonte Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* Estilo global */
+:root {
+  font-family: 'Poppins', sans-serif; /* Define a fonte global como Poppins */
+}
+
+html {
+  scroll-behavior: smooth; /* Ativa a rolagem suave */
+}
+
+* {
+  box-sizing: border-box; /* Inclui bordas e padding no tamanho total */
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove padding padrão */
+}
+
