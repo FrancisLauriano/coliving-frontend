@@ -1,4 +1,4 @@
-# Coliving - Frontend Documentation
+# 🏠 Coliving - Frontend Documentation
 
 <p align="center">
   <img src="https://img.shields.io/static/v1?label=react&message=18.2.0&color=61dafb&style=for-the-badge&logo=REACT"/>
@@ -30,6 +30,7 @@
 ---
 
 ## Descrição :page_facing_up:
+
 Coliving - Frontend é uma aplicação web desenvolvida com React.js que permite o gerenciamento de usuários em um ambiente colaborativo de moradia. A aplicação possibilita cadastrar, editar, listar e excluir usuários, com uma interface intuitiva e responsiva. O sistema consome dados de uma API backend e foi estruturado com foco em reutilização de componentes, organização de código e boa experiência do usuário. O projeto é ideal para gerenciar informações de residentes ou participantes de uma comunidade, como colivings, repúblicas ou projetos colaborativos.
 
 ---
@@ -146,7 +147,7 @@ git clone https://github.com/FrancisLauriano/coliving-frontend.git
 
 ---
 
-## Instação das depedências :arrow_down_small:
+## Instalação das depedências :arrow_down_small:
 
 ```bash
 $ npm install
