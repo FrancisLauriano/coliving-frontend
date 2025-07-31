@@ -1,4 +1,4 @@
-# Conectando Leitores - Frontend Documentation
+# Coliving - Frontend Documentation
 
 <p align="center">
   <img src="https://img.shields.io/static/v1?label=react&message=18.2.0&color=61dafb&style=for-the-badge&logo=REACT"/>
