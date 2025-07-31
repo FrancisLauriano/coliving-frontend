@@ -17,6 +17,8 @@
 
 ### Tópicos
 
+:small_blue_diamond: [Descrição](#descrição-page_facing_up) :heavy_check_mark:
+
 :small_blue_diamond: [Protótipo das Telas](#protótipo-das-telas-art) :heavy_check_mark:
 
 :small_blue_diamond: [Organização do Repositório](#organização-do-repositório-triangular_ruler-straight_ruler) :heavy_check_mark:
@@ -24,6 +26,11 @@
 :small_blue_diamond: [Instalação das dependências](#instalação-das-dependências-arrow_down_small) 
 
 :small_blue_diamond: [Executar app](#executar-app-arrow_forward) 
+
+---
+
+## Descrição :page_facing_up:
+Coliving - Frontend é uma aplicação web desenvolvida com React.js que permite o gerenciamento de usuários em um ambiente colaborativo de moradia. A aplicação possibilita cadastrar, editar, listar e excluir usuários, com uma interface intuitiva e responsiva. O sistema consome dados de uma API backend e foi estruturado com foco em reutilização de componentes, organização de código e boa experiência do usuário. O projeto é ideal para gerenciar informações de residentes ou participantes de uma comunidade, como colivings, repúblicas ou projetos colaborativos.
 
 ---
 
