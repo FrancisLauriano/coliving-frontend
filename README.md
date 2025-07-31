@@ -19,7 +19,7 @@
 
 :small_blue_diamond: [Protótipo das Telas](#protótipo-das-telas-art) :heavy_check_mark:
 
-:small_blue_diamond: [Organização do Repositório Backend](#organização-do-repositório-backend-triangular_ruler-straight_ruler) :heavy_check_mark:
+:small_blue_diamond: [Organização do Repositório](#organização-do-repositório-triangular_ruler-straight_ruler) :heavy_check_mark:
 
 :small_blue_diamond: [Instalação das dependências](#instalação-das-dependências-arrow_down_small) 
 
@@ -29,11 +29,11 @@
 
 ## Protótipo das Telas :art:
 
-- [Figma](https://www.figma.com/design/anIQvrHQ7iBeyOgDJ8ZTQ9/colliving?node-id=0-1&p=f&t=V64l5UHan0kxutPu-0)
+- Encontra-se na plataforma Figma: [Link de acesso](https://www.figma.com/design/anIQvrHQ7iBeyOgDJ8ZTQ9/colliving?node-id=0-1&p=f&t=V64l5UHan0kxutPu-0)
 
 ---
 
-## Organização do Repositório Backend :triangular_ruler: :straight_ruler:
+## Organização do Repositório :triangular_ruler: :straight_ruler:
 
 ```plaintext
 Coliving-front
@@ -67,52 +67,52 @@ Coliving-front
 ```
 
 ## Componentes
-1. Navbar
+1. **Navbar**
     - Responsabilidade: Exibe a barra de navegação no topo da aplicação.
     - Funcionalidade: Contém links para navegação entre as páginas de cadastro e edição de usuários.
   
-2. UserCard
+2. **UserCard**
     - Responsabilidade: Exibe as informações de cada usuário em um cartão.
     - Funcionalidade:
         - Mostra nome, telefone, e-mail, tipo de usuário e data de registro.
         - Possui botões para editar e excluir o usuário.
 
-3. UserForm
+3. **UserForm**
     - Responsabilidade: Formulário utilizado tanto na criação quanto na edição de usuários.
     - Funcionalidade: Recebe os dados de um novo usuário ou os dados de um usuário existente para edição. Valida os campos, incluindo a senha e a confirmação de senha.
   
-4. Modais
+4. **Modais**
     - SuccessModal: Exibe um modal com uma mensagem de sucesso (ex: "Usuário cadastrado com sucesso").
     - DeleteModal: Exibe um modal de confirmação para a exclusão de um usuário.
   
-5. Páginas
-    - HomePage
+5. **Páginas**
+    - **HomePage**
         - Responsabilidade: Página inicial que lista todos os usuários.
         - Funcionalidade:
             - Exibe todos os usuários em cartões utilizando o UserCard.
             - Permite filtrar os usuários com base no tipo de usuário.
             - Permite excluir um usuário ao clicar no ícone de lixeira em UserCard.
 
-    - CadastrarUsuarioPage
+    - **CadastrarUsuarioPage**
         - Responsabilidade: Página para cadastro de novos usuários.
         - Funcionalidade:
             - Contém um formulário (UserForm) para preencher os dados do novo usuário.
             - Ao submeter o formulário, o usuário é criado e um modal de sucesso é exibido.
   
-    - EditarUsuarioPage
+    - **EditarUsuarioPage**
         - Responsabilidade: Página para edição dos dados de um usuário existente.
         - Funcionalidade:
             - O formulário (UserForm) é preenchido automaticamente com os dados do usuário.
             - Caso o campo de senha seja deixado vazio, o valor não será enviado para o backend.
             - O botão de salvar atualiza os dados do usuário e exibe um modal de sucesso.
   
-6. Rotas
+6. **Rotas**
 As rotas da aplicação são configuradas utilizando o react-router-dom. As páginas são acessadas por meio das seguintes URLs:
-- /: Página inicial (HomePage)
-- /register-user: Página de cadastro de usuário (CadastrarUsuarioPage)
-- /edit-user/:id: Página de edição de usuário (EditarUsuarioPage)
+- `/`: Página inicial (HomePage)
+- `/register-user`: Página de cadastro de usuário (CadastrarUsuarioPage)
+- `/edit-user/id`: Página de edição de usuário (EditarUsuarioPage)
 
-7. Fluxo de Dados
+7. **Fluxo de Dados**
     - **Cadastro de Usuário:** Quando o usuário preenche o formulário na CadastrarUsuarioPage e envia os dados, o frontend envia os dados para o backend via POST. Se o cadastro for bem-sucedido, um modal de sucesso é exibido.
     - **Edição de Usuário:** Ao clicar no botão de edição de um usuário na HomePage, a EditarUsuarioPage é carregada com os dados do usuário. O usuário pode editar os dados e, ao enviar o formulário, os dados são enviados via PUT para o backend. Se a edição for bem-sucedida, um modal de sucesso é exibido.
     - **Exclusão de Usuário:** Quando o usuário clica no botão de exclusão em UserCard, é exibido um modal de confirmação. Caso o usuário confirme a exclusão, os dados do backend são atualizados via DELETE.
